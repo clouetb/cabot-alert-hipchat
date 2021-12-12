@@ -4,12 +4,12 @@ from cabot.cabotapp.alert import AlertPlugin, AlertPluginUserData
 from os import environ as env
 
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.template import Context, Template
 
 import logging
 import requests
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 
 logger = logging.getLogger(__name__)
